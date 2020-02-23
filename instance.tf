@@ -69,6 +69,10 @@ output "private_ip"{
   value = aws_instance.me.private_ip
 }
 
+output "public_ip"{
+  value = aws_instance.me.public_ip
+}
+
 output "security_group"{
   value = aws_security_group.fw.id
 }
