@@ -38,6 +38,10 @@ resource "aws_instance" "me"{
   }
 }
 
+resource "aws_eip_association" "eip_assoc" {
+  instance_id   = aws_instance.me.id
+  allocation_id = var.eip_id
+}
 
 resource "aws_security_group" "fw"{
 	name					= "dummy"

@@ -22,3 +22,5 @@ variable "ami_id"{
 
 variable "user_data"{}
 
+variable "eip_id"{}
+
